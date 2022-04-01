@@ -15,12 +15,12 @@ print(power(a, b, p))
 del(a, b, p)
 
 # ========== SOLUTION ==========
-from math import gcd
+# from math import gcd
 
-a = 273246787654
-p = 65537
+# a = 273246787654
+# p = 65537
 
-if gcd(a,p)==1: #a and p are coprime
-        print(1)
+# if gcd(a,p)==1: #a and p are coprime
+#         print(1)
 
-del(a, p)
+# del(a, p)
