@@ -1,0 +1,10 @@
+1. Klik tombol submit di ENCRYPT_FLAG()
+   {"ciphertext":"c92b7734070205bdf6c0087a751466ec13ae15e6f1bcdd3f3a535ec0f4bbae66"}
+   c92b7734070205bdf6c0087a751466ec13ae15e6f1bcdd3f3a535ec0f4bbae66
+
+2. Paste c92b7734070205bdf6c0087a751466ec13ae15e6f1bcdd3f3a535ec0f4bbae66 ke DECRYPT(CIPHERTEXT)
+   {"plaintext":"6af212881f55bc7db89400a3ec346a15c3ee2a6a21a567cc3de38eba8bae779e"}
+   6af212881f55bc7db89400a3ec346a15c3ee2a6a21a567cc3de38eba8bae779e
+
+3. Paste 6af212881f55bc7db89400a3ec346a15c3ee2a6a21a567cc3de38eba8bae779e di HEX ENCODER/DECODER
+   Dapat crypto{bl0ck_c1ph3r5_4r3_f457_!}
