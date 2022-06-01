@@ -1,21 +1,21 @@
 import requests
 
 ciphertext_hex = requests.get('http://aes.cryptohack.org/symmetry/encrypt_flag/').json()
+print(ciphertext_hex)
 ciphertext = ciphertext_hex['ciphertext']
 print(ciphertext)
 
-
-iv = ciphertext[:16*2]
+iv = ciphertext[:32]
 print(iv)
 
-ciphertext = ciphertext[32:]
+plaintext = ciphertext[32:]
+print(plaintext)
+
+ciphertext_hex = requests.get('http://aes.cryptohack.org/symmetry/encrypt/{}/{}'.format(plaintext, iv)).json()
+ciphertext = ciphertext_hex['ciphertext']
 print(ciphertext)
 
-
-plaintext_hex = requests.get('http://aes.cryptohack.org/symmetry/encrypt/{}/{}'.format(ciphertext, iv)).json()
-plaintext = plaintext_hex['ciphertext']
-print(plaintext)
-flag = bytes.fromhex(plaintext)
-print(flag)
+flag = bytes.fromhex(ciphertext)
+print(flag.decode())
 
 # crypto{0fb_15_5ymm37r1c4l_!!!11!}
